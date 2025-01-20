@@ -1,0 +1,10 @@
+goto() {
+  arg=$1
+  BASE_DIR="$HOME/workspace/github.com/mydrilla/$arg"
+
+  if [ -z "$arg" ]; then
+    BASE_DIR="$HOME/workspace/github.com/mydrilla"
+  fi
+
+  cd "$BASE_DIR" || exit
+}
