@@ -1,9 +1,9 @@
 goto() {
   arg=$1
-  BASE_DIR="$HOME/workspace/github.com/mydrilla/$arg"
+  BASE_DIR="$HOME/workspace/github.com/bja-vu/$arg"
 
   if [ -z "$arg" ]; then
-    BASE_DIR="$HOME/workspace/github.com/mydrilla"
+    BASE_DIR="$HOME/workspace/github.com/bja-vu"
   fi
 
   cd "$BASE_DIR" || exit
